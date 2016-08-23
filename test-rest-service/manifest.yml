@@ -1,0 +1,9 @@
+---
+applications:
+- name: test-rest-service-example
+  memory: 512M
+  instances: 1
+  host: rest-service-example
+  path: target/test-rest-service-0.1.0.jar
+  env:
+    SPRING_PROFILES_ACTIVE: pcf
